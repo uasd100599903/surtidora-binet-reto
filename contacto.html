@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://www.openstreetmap.org; img-src 'self' data:; script-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="description" content="Contacta a Surtidora Binet en Villa Mella y revisa las pruebas del incidente digital.">
+  <title>Contacto y pruebas del incidente | Surtidora Binet S.R.L.</title>
+  <link rel="icon" href="imagenes/logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Surtidora Binet, inicio">
+    <img class="brand-logo" id="logo" src="imagenes/logo.jpg" alt="Logo de Surtidora Binet S.R.L." width="44" height="44">
+    <span class="brand-name">Surtidora Binet</span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  <nav id="menu" class="nav" aria-label="Principal">
+    <a href="index.html">Historia del misterio</a>
+    <a href="servicios.html">Servicios reinventados</a>
+    <a href="contacto.html" aria-current="page">Contacto</a>
+    <button class="theme-toggle" type="button" aria-pressed="false">Modo claro</button>
+  </nav>
+</header>
+<main id="contenido">
+  <header class="page-head">
+    <h1 class="glitch" data-text="Contacto y pruebas">Contacto y pruebas</h1>
+    <p class="lead">Escríbenos, o revisa el expediente completo de lo que nos pasó.</p>
+  </header>
+
+  <section class="section split" aria-labelledby="form-title">
+    <div>
+      <h2 id="form-title">Escríbenos</h2>
+      <address>
+        <p><strong>Ubicación:</strong> Villa Mella, Santo Domingo Norte</p>
+        <p><strong>Horario:</strong> lunes a viernes, de 8:00 a. m. a 8:00 p. m.<br>
+        Sábados y domingos, de 8:00 a. m. a 6:00 p. m.</p>
+        <p><strong>Teléfono y WhatsApp:</strong> <a href="tel:+18498036235">+1 (849) 803-6235</a></p>
+        <p><strong>Cómo comprar:</strong> con delivery o de forma personal en el local.</p>
+      </address>
+      <a class="btn" href="https://wa.me/18498036235" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+    <form id="form-contacto" class="card" novalidate>
+      <label for="c-nombre">Nombre</label>
+      <input id="c-nombre" type="text" autocomplete="name" maxlength="60" required>
+      <p class="error" data-for="c-nombre" role="alert"></p>
+
+      <label for="c-tel">Teléfono</label>
+      <input id="c-tel" type="tel" autocomplete="tel" maxlength="20" required>
+      <p class="error" data-for="c-tel" role="alert"></p>
+
+      <label for="c-msg">Mensaje</label>
+      <textarea id="c-msg" rows="4" maxlength="500" required></textarea>
+      <p class="error" data-for="c-msg" role="alert"></p>
+
+      <button class="btn" type="submit">Enviar por WhatsApp</button>
+      <p id="form-ok" class="ok" role="status" hidden>Listo. Se abrió WhatsApp con tu mensaje.</p>
+    </form>
+  </section>
+
+  <section class="section" aria-labelledby="map-title">
+    <h2 id="map-title">Dónde estamos</h2>
+    <p class="lead-sm">Mapa de la zona de Villa Mella (ubicación aproximada).</p>
+    <div class="map">
+      <iframe title="Mapa de Villa Mella, Santo Domingo Norte" loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-69.915%2C18.558%2C-69.890%2C18.578&amp;layer=mapnik&amp;marker=18.5685%2C-69.9017"></iframe>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="pruebas-title">
+    <h2 id="pruebas-title">Pruebas del incidente</h2>
+
+    <h3>Registro del servidor</h3>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr">Eventos registrados la noche del borrado</caption>
+        <thead><tr><th scope="col">Hora</th><th scope="col">Evento</th><th scope="col">Estado</th></tr></thead>
+        <tbody>
+          <tr><td>03:12:07</td><td>Registro DNS de surtidorabinet.do eliminado</td><td class="bad">FALLÓ</td></tr>
+          <tr><td>03:12:44</td><td>Sitio web: 404 en todas las rutas</td><td class="bad">FALLÓ</td></tr>
+          <tr><td>03:38:19</td><td>Sesión desconocida en una red social</td><td class="warn">SOSPECHOSO</td></tr>
+          <tr><td>03:40:02</td><td>Publicaciones y catálogo borrados en lote</td><td class="bad">FALLÓ</td></tr>
+          <tr><td>05:55:30</td><td>Último acceso al correo de administración</td><td class="warn">SOSPECHOSO</td></tr>
+          <tr><td>Hoy</td><td>Sitio restaurado con respaldo y 2FA</td><td class="good">OK</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Evidencias</h3>
+    <div class="evidence">
+      <figure>
+        <pre aria-label="Contenido del archivo del USB">LEEME.txt
+
+Tu negocio ha sido borrado
+de la existencia digital.
+
+Si quieres recuperarlo,
+deberás reinventarlo.</pre>
+        <figcaption>Evidencia A: archivo único del USB</figcaption>
+      </figure>
+      <figure>
+        <pre aria-label="Captura simulada de una búsqueda sin resultados">Buscar: "Surtidora Binet"
+
+0 resultados.
+¿Quisiste decir "algo que existe"?</pre>
+        <figcaption>Evidencia B: búsqueda a las 9:00 a. m.</figcaption>
+      </figure>
+      <figure>
+        <pre aria-label="Captura simulada de un perfil de red social vacío">@surtidorabinet
+
+0 publicaciones
+0 seguidores
+Esta cuenta no tiene contenido.</pre>
+        <figcaption>Evidencia C: perfil vacío</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>Surtidora Binet S.R.L. · Villa Mella, Santo Domingo Norte</p>
+  <p class="muted">Del embutido al envase: todo para que tu negocio no pare.</p>
+  <p class="muted small">El relato del incidente es ficticio y fue creado para un reto académico. Los productos, horarios y contacto son reales.</p>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

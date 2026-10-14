@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://www.openstreetmap.org; img-src 'self' data:; script-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="description" content="Catálogo de embutidos, salsas, lácteos y desechables, y un armador de pedidos que se envía por WhatsApp.">
+  <title>Servicios reinventados | Surtidora Binet S.R.L.</title>
+  <link rel="icon" href="imagenes/logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Surtidora Binet, inicio">
+    <img class="brand-logo" id="logo" src="imagenes/logo.jpg" alt="Logo de Surtidora Binet S.R.L." width="44" height="44">
+    <span class="brand-name">Surtidora Binet</span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  <nav id="menu" class="nav" aria-label="Principal">
+    <a href="index.html">Historia del misterio</a>
+    <a href="servicios.html" aria-current="page">Servicios reinventados</a>
+    <a href="contacto.html">Contacto</a>
+    <button class="theme-toggle" type="button" aria-pressed="false">Modo claro</button>
+  </nav>
+</header>
+<main id="contenido">
+  <header class="page-head">
+    <h1 class="glitch" data-text="Servicios reinventados">Servicios reinventados</h1>
+    <p class="lead">Antes pedías por mensaje y rezabas. Ahora armas tu pedido aquí y llega listo a nuestro WhatsApp.</p>
+  </header>
+
+  <section class="section" aria-labelledby="serv-title">
+    <h2 id="serv-title">Lo que hacemos</h2>
+    <div class="services">
+      <article class="service"><h3>Embutidos</h3><p>Salchichas, jamones, salamis y jamonetas para tu negocio de comida.</p></article>
+      <article class="service"><h3>Desechables</h3><p>Bandejas, vasos, platos, cubiertos, tapas, servilletas y fundas.</p></article>
+      <article class="service"><h3>Delivery o retiro</h3><p>Te lo llevamos, o pasas a buscarlo al local en Villa Mella.</p></article>
+      <article class="service"><h3>Catálogo completo</h3><p>Manejamos carnes, lácteos, salsas, bebidas y más. Pídelo por WhatsApp.</p></article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="cat-title">
+    <h2 id="cat-title">Catálogo reinventado</h2>
+    <p class="lead-sm">Filtra por categoría y agrega lo que necesites a tu pedido. No publicamos precios: se confirman por WhatsApp.</p>
+    <div class="chips" role="group" aria-label="Filtrar por categoría"><button type="button" class="chip" data-filter="todos" aria-pressed="true">Todos</button><button type="button" class="chip" data-filter="embutidos" aria-pressed="false">Embutidos</button><button type="button" class="chip" data-filter="salsas" aria-pressed="false">Salsas y aderezos</button><button type="button" class="chip" data-filter="lacteos" aria-pressed="false">Lácteos y aceites</button><button type="button" class="chip" data-filter="otros" aria-pressed="false">Y también</button></div>
+    <div class="lista-productos">
+      <article class="producto" data-cat="embutidos">
+        <img class="foto-producto" src="imagenes/salchichas.jpg" alt="Paquete de 36 salchichas Chef Ranchera hot dog" loading="lazy">
+        <h3>Salchichas Chef Ranchera</h3>
+        <p>Paquete de 36 unidades.</p>
+        <button class="btn btn-sm add" type="button" data-name="Salchichas Chef Ranchera" aria-label="Agregar Salchichas Chef Ranchera al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="embutidos">
+        <img class="foto-producto" src="imagenes/jamon-picnic.jpg" alt="Pieza de jamón cocido Picnic Especial de la marca Chef" loading="lazy">
+        <h3>Jamón Picnic Especial</h3>
+        <p>Jamón cocido Chef, pieza de 7 lb.</p>
+        <button class="btn btn-sm add" type="button" data-name="Jamón Picnic Especial" aria-label="Agregar Jamón Picnic Especial al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="embutidos">
+        <img class="foto-producto" src="imagenes/salami-criollo.jpg" alt="Salami criollo grado estándar en funda amarilla y verde" loading="lazy">
+        <h3>Salami Criollo</h3>
+        <p>Grado estándar.</p>
+        <button class="btn btn-sm add" type="button" data-name="Salami Criollo" aria-label="Agregar Salami Criollo al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="embutidos">
+        <img class="foto-producto" src="imagenes/salami-ahumado.jpg" alt="Salami ahumado El Criollo de Ducarnes" loading="lazy">
+        <h3>Salami Ahumado</h3>
+        <p>El Criollo, de Ducarnes.</p>
+        <button class="btn btn-sm add" type="button" data-name="Salami Ahumado" aria-label="Agregar Salami Ahumado al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="embutidos">
+        <img class="foto-producto" src="imagenes/salami-argentino.jpg" alt="Salami Argentino Premium de la marca Don Cibao" loading="lazy">
+        <h3>Salami Argentino Premium</h3>
+        <p>Marca Don Cibao.</p>
+        <button class="btn btn-sm add" type="button" data-name="Salami Argentino Premium" aria-label="Agregar Salami Argentino Premium al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="embutidos">
+        <img class="foto-producto" src="imagenes/salami-latino.jpg" alt="Salami Latino de Naranjal, grado superior" loading="lazy">
+        <h3>Salami Latino</h3>
+        <p>Naranjal, grado superior.</p>
+        <button class="btn btn-sm add" type="button" data-name="Salami Latino" aria-label="Agregar Salami Latino al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="embutidos">
+        <img class="foto-producto" src="imagenes/jamoneta.jpg" alt="Jamoneta Especial La Criolla de Ducarnes" loading="lazy">
+        <h3>Jamoneta Especial</h3>
+        <p>La Criolla, de Ducarnes.</p>
+        <button class="btn btn-sm add" type="button" data-name="Jamoneta Especial" aria-label="Agregar Jamoneta Especial al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="salsas">
+        <img class="foto-producto" src="imagenes/mostaza.jpg" alt="Envase de mostaza Baldom de 7 libras" loading="lazy">
+        <h3>Mostaza Baldom</h3>
+        <p>Envase de 7 lbs.</p>
+        <button class="btn btn-sm add" type="button" data-name="Mostaza Baldom" aria-label="Agregar Mostaza Baldom al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="salsas">
+        <img class="foto-producto" src="imagenes/mayonesa.jpg" alt="Paquete de sobres de mayonesa real Baldom de 30 gramos" loading="lazy">
+        <h3>Mayonesa en sobres</h3>
+        <p>Baldom, sobres de 30 g.</p>
+        <button class="btn btn-sm add" type="button" data-name="Mayonesa en sobres" aria-label="Agregar Mayonesa en sobres al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="salsas">
+        <img class="foto-producto" src="imagenes/cajas-mayonesa-catchup.jpg" alt="Cajas apiladas de mayonesa y catchup Espalsa en el almacén" loading="lazy">
+        <h3>Mayonesa y catchup</h3>
+        <p>Espalsa, cajas de 4 galones.</p>
+        <button class="btn btn-sm add" type="button" data-name="Mayonesa y catchup" aria-label="Agregar Mayonesa y catchup al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="lacteos">
+        <img class="foto-producto" src="imagenes/gouda.jpg" alt="Bloque de queso Gouda Mühlenhof importado de Alemania" loading="lazy">
+        <h3>Queso Gouda</h3>
+        <p>Mühlenhof, importado.</p>
+        <button class="btn btn-sm add" type="button" data-name="Queso Gouda" aria-label="Agregar Queso Gouda al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="lacteos">
+        <img class="foto-producto" src="imagenes/margarina.jpg" alt="Cubeta de margarina Bella de 5 libras" loading="lazy">
+        <h3>Margarina Bella</h3>
+        <p>Cubeta de 5 libras.</p>
+        <button class="btn btn-sm add" type="button" data-name="Margarina Bella" aria-label="Agregar Margarina Bella al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="lacteos">
+        <img class="foto-producto" src="imagenes/aceite.jpg" alt="Cajas de aceite Special apiladas en el almacén" loading="lazy">
+        <h3>Aceite Special</h3>
+        <p>Cajas para negocios.</p>
+        <button class="btn btn-sm add" type="button" data-name="Aceite Special" aria-label="Agregar Aceite Special al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="otros">
+        <img class="foto-producto" src="imagenes/pan.jpg" alt="Funda de pan de hot dog Bolín clásico" loading="lazy">
+        <h3>Pan de hot dog</h3>
+        <p>Pan Bolín clásico.</p>
+        <button class="btn btn-sm add" type="button" data-name="Pan de hot dog" aria-label="Agregar Pan de hot dog al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="otros">
+        <img class="foto-producto" src="imagenes/cafe.jpg" alt="Funda de café Santo Domingo molido con 12 sobres de 1 onza" loading="lazy">
+        <h3>Café Santo Domingo</h3>
+        <p>Molido, 12 sobres de 1 oz.</p>
+        <button class="btn btn-sm add" type="button" data-name="Café Santo Domingo" aria-label="Agregar Café Santo Domingo al pedido">Agregar al pedido</button>
+      </article>
+      <article class="producto" data-cat="otros">
+        <img class="foto-producto" src="imagenes/desechables.jpg" alt="Platos, vasos y cubiertos plásticos desechables sobre fondo amarillo" loading="lazy">
+        <h3>Desechables</h3>
+        <p>Bandejas, vasos, platos, cubiertos, tapas, servilletas y fundas.</p>
+        <button class="btn btn-sm add" type="button" data-name="Desechables" aria-label="Agregar Desechables al pedido">Agregar al pedido</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="pedido" class="section split" aria-labelledby="ped-title">
+    <div>
+      <h2 id="ped-title">Tu pedido</h2>
+      <p>Revisa las cantidades y envíalo. Se abrirá WhatsApp con el mensaje ya escrito para que solo toques enviar.</p>
+    </div>
+    <div class="card" id="pedido-box">
+      <ul id="pedido-lista" class="pedido-lista" aria-live="polite"></ul>
+      <p id="pedido-vacio" class="muted">Aún no has agregado productos.</p>
+
+      <label for="p-nombre">Nombre</label>
+      <input id="p-nombre" type="text" maxlength="60" autocomplete="name">
+
+      <label for="p-entrega">¿Cómo quieres recibirlo?</label>
+      <select id="p-entrega">
+        <option>Delivery</option>
+        <option>Retiro personal en el local</option>
+      </select>
+
+      <label for="p-notas">Detalles del pedido</label>
+      <textarea id="p-notas" rows="3" maxlength="300"></textarea>
+
+      <a id="pedido-enviar" class="btn" href="#pedido" target="_blank" rel="noopener" aria-disabled="true">Enviar pedido por WhatsApp</a>
+      <button id="pedido-limpiar" class="btn btn-ghost" type="button">Vaciar pedido</button>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="escudo-title">
+    <h2 id="escudo-title">Escudo anti-borrado</h2>
+    <p class="lead-sm">Lo que agregamos para que no vuelva a pasar.</p>
+    <ul class="shield">
+      <li><strong>Copias de seguridad automáticas.</strong> El sitio vive en un repositorio y se respalda fuera de nuestras cuentas.</li>
+      <li><strong>Verificación en dos pasos.</strong> En dominio, correo y redes. Ya no hay una sola llave.</li>
+      <li><strong>Canales duplicados.</strong> Si una red cae, el cliente nos encuentra por WhatsApp, por teléfono o en el mapa.</li>
+      <li><strong>Sitio protegido.</strong> Política de seguridad de contenido y formularios que no guardan datos en el navegador.</li>
+      <li><strong>Vigilancia semanal.</strong> Revisamos que el dominio y las cuentas sigan siendo nuestros.</li>
+    </ul>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>Surtidora Binet S.R.L. · Villa Mella, Santo Domingo Norte</p>
+  <p class="muted">Del embutido al envase: todo para que tu negocio no pare.</p>
+  <p class="muted small">El relato del incidente es ficticio y fue creado para un reto académico. Los productos, horarios y contacto son reales.</p>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/pedido.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
